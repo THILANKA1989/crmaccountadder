@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 
@@ -18,6 +17,7 @@ function App() {
   };
 
   const validateEmail = (event) => {
+    IsValid = true;
     const email = event.target.value;
     if (emailRegex.test(email)) {
       setIsValid(true);
